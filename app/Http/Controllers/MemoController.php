@@ -40,7 +40,7 @@ class MemoController extends Controller
         $memo->body = $request->body;
         $memo->token = $request->token;
         $memo->save();
-        return redirect("memos/" . $memo->token);
+        return redirect("memos/" .  $memo->token);
     }
 
     /**
